@@ -9,6 +9,13 @@ This is a simple RESTful API built with **Laravel** that allows you to send and 
 - **Database Notifications**: Notifications are stored in the database for persistence.
 - **Broadcast Notifications**: Notifications can be broadcasted in real-time (optional configuration).
 
+## Endpoints
+| Method | Endpoint         | Description             |
+|--------|------------------|-------------------------|
+| POST    | `/api/send-notification`| Send a new notification to a user        |
+| GET    | `/api/notifications/unread/{userId}`| Get unread notifications for a user  |
+| POST   | `/api/notifications/{notificationId}/mark-read`     | Mark a notification as read    |
+
 Technologies Used
 
 Laravel: PHP framework.
