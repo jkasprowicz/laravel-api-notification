@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "06104d86-3b97-41bf-bfff-436d01dc93f3",
+		"name": "laravel-api-notifications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40399565"
+	},
+	"item": [
+		{
+			"name": "notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 1,\n    \"message\": \"This is a test notification\",\n    \"urgency\": \"high\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/send-notification",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"send-notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-of-notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/1/notifications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"1",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mark-read-notifications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/notifications/a85a6284-8539-40ee-8cc8-aff498223c0f/mark-read",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notifications",
+						"a85a6284-8539-40ee-8cc8-aff498223c0f",
+						"mark-read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unread-notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/notifications/unread/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notifications",
+						"unread",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
