@@ -8,3 +8,9 @@ This is a simple RESTful API built with **Laravel** that allows you to send and 
 - **Fetch Unread Notifications**: Retrieve unread notifications for specific users.
 - **Database Notifications**: Notifications are stored in the database for persistence.
 - **Broadcast Notifications**: Notifications can be broadcasted in real-time (optional configuration).
+
+Technologies Used
+
+Laravel: PHP framework.
+MySQL: Database.
+Postman: For API testing.
